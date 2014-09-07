@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.Credosyssolutions.postmyletters.controllers.SplashViewController"
+            android:name=".controllers.SplashViewController"
             android:label="@string/title_activity_splash_view_controller" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,6 +38,32 @@
             <meta-data
                 android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
                 android:value="true" />
+        </activity>
+        <activity
+            android:name=".controllers.LoginViewController"
+            android:label="@string/title_activity_login_view_controller" >
+        </activity>
+        <activity
+            android:name=".controllers.SignupViewController"
+            android:label="@string/title_activity_signup_view_controller" >
+        </activity>
+        <activity
+            android:name=".controllers.PostBoxViewController"
+            android:label="@string/title_activity_post_box_view_controller" >
+        </activity>
+        <activity
+            android:name=".controllers.PenPalsViewController"
+            android:label="@string/title_activity_pen_pals_view_controller" >
+        </activity>
+        <activity
+            android:name=".controllers.WriteRawLetter"
+            android:label="@string/title_activity_write_raw_letter" >
+        </activity>
+        <activity
+            android:name="com.Credosyssolutions.postmyletters.controllers.WriteRawLetterViewController"
+           android:windowSoftInputMode="adjustResize|stateHidden"
+           
+            android:label="@string/title_activity_write_raw_letter_view_controller" >
         </activity>
     </application>
 

@@ -6,46 +6,51 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.parse.*;
+
 import com.Credosyssolutions.postmyletters.R;
 import com.parse.Parse;
 import com.parse.ParseUser;
 
 public class SplashViewController extends Activity {
-	
+
 	// Splash screen timer
-    private static int SPLASH_TIME_OUT = 3000;
+	private static int SPLASH_TIME_OUT = 3000;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash_view_controller);
-		   Parse.initialize(this, "ikCHpUnuiBkVeAxkYI0IRWGsoesrs3SsO5Ah1ezV", "ohM5yMC8aHQwlAJSshOjD3TA0Qebgk8PjvqA4B8f");
+//		Parse.initialize(this, "ikCHpUnuiBkVeAxkYI0IRWGsoesrs3SsO5Ah1ezV", "ohM5yMC8aHQwlAJSshOjD3TA0Qebgk8PjvqA4B8f");
 
+Parse.initialize(SplashViewController.this, "ikCHpUnuiBkVeAxkYI0IRWGsoesrs3SsO5Ah1ezV", "ohM5yMC8aHQwlAJSshOjD3TA0Qebgk8PjvqA4B8f");
 		if (ParseUser.getCurrentUser() == null) {
 			//show Loginscreen
-			
+			Intent i = new Intent(SplashViewController.this, LoginViewController.class);
+			startActivity(i);
+
+			// close this activity
+			finish();
 		}else{
 			new Handler().postDelayed(new Runnable() {
-	            /*
-	             * Showing splash screen with a timer. This will be useful when you
-	             * want to show case your app logo / company
-	             */
-	            @Override
-	            public void run() {
-	                // This method will be executed once the timer is over
-	                // Start your app main activity
-	                Intent i = new Intent(SplashViewController.this, RootViewController.class);
-	                startActivity(i);
-	 
-	                // close this activity
-	                finish();
-	            }
-	        }, SPLASH_TIME_OUT);
+				/*
+				 * Showing splash screen with a timer. This will be useful when you
+				 * want to show case your app logo / company
+				 */
+				@Override
+				public void run() {
+					// This method will be executed once the timer is over
+					// Start your app main activity
+					Intent i = new Intent(SplashViewController.this, RootViewController.class);
+					startActivity(i);
 
-			
+					// close this activity
+					finish();
+				}
+			}, SPLASH_TIME_OUT);
+
+
 		}
-		
+
 	}
 
 	@Override
