@@ -60,10 +60,17 @@
             android:label="@string/title_activity_write_raw_letter" >
         </activity>
         <activity
-            android:name="com.Credosyssolutions.postmyletters.controllers.WriteRawLetterViewController"
-           android:windowSoftInputMode="adjustResize|stateHidden"
-           
-            android:label="@string/title_activity_write_raw_letter_view_controller" >
+            android:name=".controllers.WriteRawLetterViewController"
+            android:label="@string/title_activity_write_raw_letter_view_controller"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name=".controllers.FetchFriendsViewController"
+            android:label="@string/title_activity_fetch_friends_view_controller" >
+        </activity>
+        <activity
+            android:name="com.Credosyssolutions.postmyletters.controllers.LetterViewController"
+            android:label="@string/title_activity_letter_view_controller" >
         </activity>
     </application>
 

@@ -8,10 +8,13 @@ import com.Credosyssolutions.postmyletters.DataModel.PostBoxAdapter;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 public class PenPalsViewController extends ListActivity {
 
@@ -43,6 +46,25 @@ public class PenPalsViewController extends ListActivity {
 	}
 
 	
+	 @Override
+	    protected void onListItemClick(ListView l, View v, int position, long id) {
+	          
+	          super.onListItemClick(l, v, position, id);
+	  
+	             // ListView Clicked item index
+	             int itemPosition     = position;
+	             
+	             // ListView Clicked item value
+	             String  itemValue    = (String) l.getItemAtPosition(position);
+	           
+	             Intent	intent = new Intent(PenPalsViewController.this, FetchFriendsViewController.class);
+	           	 startActivity(intent);
+	            
+					
+
+	                
+	             
+	    }
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {

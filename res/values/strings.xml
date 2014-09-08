@@ -11,5 +11,7 @@
     <string name="title_activity_pen_pals_view_controller">PenPalsViewController</string>
     <string name="title_activity_write_raw_letter">WriteRawLetter</string>
     <string name="title_activity_write_raw_letter_view_controller">WriteRawLetterViewController</string>
+    <string name="title_activity_fetch_friends_view_controller">FetchFriendsViewController</string>
+    <string name="title_activity_letter_view_controller">LetterViewController</string>
 
 </resources>

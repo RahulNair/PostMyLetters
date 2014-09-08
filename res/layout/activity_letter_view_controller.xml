@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.Credosyssolutions.postmyletters.controllers.LetterViewController" >
+
+    <TextView
+        android:id="@+id/LetterTittle_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Life is Beautiful"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LetterTittle_textView"
+        android:layout_centerHorizontal="true"
+        android:text="22 Sept,2014"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:text="By:- Rakesh Nair"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/date_textView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        >
+        <TextView
+        android:id="@+id/letterContent_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+             sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.But I must explain to you how all this mistaken
+idea of denouncing pleasure and praising pain was born and I will give you 
+a complete account of the system, and expound the actual teachings of the
+ great explorer of the truth, the master-builder of human happiness. 
+ No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, 
+ but because those who do not know how to pursue pleasure rationally encounter 
+ consequences that are extremely painful. Nor again is there anyone who loves or 
+ pursues or desires to obtain pain of itself, because it is pain, but because occasionally 
+ circumstances occur in which toil and pain can procure him some great pleasure.
+  To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or
+               one who avoids a pain that produces no resultant pleasure?" />
+        
+    </ScrollView>
+    
+</RelativeLayout>
