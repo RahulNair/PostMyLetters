@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--   Copyright (C) CredosysSolutions - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Rahul Nair <rhlnair@gmail.com>, September 2014.
+ */-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="?android:attr/listPreferredItemHeight"

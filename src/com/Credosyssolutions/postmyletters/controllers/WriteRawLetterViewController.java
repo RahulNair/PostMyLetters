@@ -1,3 +1,9 @@
+/* Copyright (C) CredosysSolutions - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Rahul Nair <rhlnair@gmail.com>, September 2014.
+ */
+
 package com.Credosyssolutions.postmyletters.controllers;
 
 import android.app.ActionBar;
