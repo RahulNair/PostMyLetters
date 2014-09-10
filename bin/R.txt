@@ -14,6 +14,9 @@ int attr touchModeBehind 0x7f010007
 int attr viewAbove 0x7f010001
 int attr viewBehind 0x7f010002
 int color black 0x7f060001
+int color edt_default 0x7f060005
+int color edt_focused 0x7f060004
+int color edt_pressed 0x7f060003
 int color transparent 0x7f060000
 int color white 0x7f060002
 int dimen activity_horizontal_margin 0x7f070000
@@ -22,6 +25,8 @@ int drawable desc_rounded_no_padding 0x7f020000
 int drawable desc_rounded_no_padding_black 0x7f020001
 int drawable ic_launcher 0x7f020002
 int drawable logo 0x7f020003
+int drawable logo_new 0x7f020004
+int drawable testicon 0x7f020005
 int id LetterTittle_textView 0x7f050017
 int id MySummary_textView 0x7f050011
 int id aboutMe_editText 0x7f050012

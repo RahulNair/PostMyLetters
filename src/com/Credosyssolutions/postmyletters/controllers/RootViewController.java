@@ -8,7 +8,9 @@
 package com.Credosyssolutions.postmyletters.controllers;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.app.Dialog;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -22,13 +24,11 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.Credosyssolutions.postmyletters.R;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingListActivity;
 
 
-public class RootViewController extends SlidingListActivity {
+public class RootViewController extends ListActivity {
 	private static final String tag = "ActionSheetDemoActivity";
 	private int width;
 
@@ -47,8 +47,8 @@ public class RootViewController extends SlidingListActivity {
         actionBar.setCustomView(customView);
         
         
-        setBehindContentView(R.layout.activity_slide_profile);
-        getSlidingMenu().setBehindOffset(100);
+    //    setBehindContentView(R.layout.activity_slide_profile);
+    //    getSlidingMenu().setBehindOffset(100);
         
         DisplayMetrics metrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(metrics);

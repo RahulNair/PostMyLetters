@@ -4,4 +4,9 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     
+    
+    <color name="edt_pressed">#99CBFF</color>
+	<color name="edt_focused">#CEF7F6</color>
+	<color name="edt_default">#000000</color>
+    
 </resources>

@@ -14,23 +14,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/white"
     tools:context="com.Credosyssolutions.postmyletters.controllers.SplashViewController" >
 
 	<ImageView
-        android:id="@+id/imgLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
- 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:textSize="12dp"
-        android:textColor="#454545"
-        android:gravity="center_horizontal"
-        android:layout_alignParentBottom="true"
-        android:text="Post My Letters" />
+	    android:id="@+id/imgLogo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:src="@drawable/logo_new_medium" />
+
+	<TextView
+	    android:id="@+id/appNameTextView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:text="Lettermate"
+	    android:textSize="70dp"
+	    
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<ProgressBar
+	    android:id="@+id/splash_progressBar"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/imgLogo"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignRight="@+id/imgLogo"
+	    android:minHeight="5dip" 
+android:maxHeight="5dip"
+	    android:layout_marginBottom="57dp" />
 
 </RelativeLayout>
