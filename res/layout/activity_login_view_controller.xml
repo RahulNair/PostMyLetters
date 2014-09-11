@@ -1,9 +1,10 @@
-<!--   Copyright (C) CredosysSolutions - All Rights Reserved
+<!--
+   Copyright (C) CredosysSolutions - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  * Written by Rahul Nair <rhlnair@gmail.com>, September 2014.
- */-->
-
+ */
+-->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,59 +22,51 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="40dp"
         android:text="Sign up" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_marginTop="99dp"
-        android:text="Username"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_alignLeft="@+id/editText1"
-        android:ems="10" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_marginRight="23dp"
-        android:layout_marginTop="53dp"
-        android:layout_toLeftOf="@+id/editText2"
-        android:text="Password"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignLeft="@+id/signin_button"
-        android:ems="10"
-        android:inputType="textPassword" >
-
-        <requestFocus />
-    </EditText>
 
     <Button
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/signup_textview"
+        android:layout_alignLeft="@+id/password_editText"
+        android:layout_alignRight="@+id/username_editText"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/customtheme_btn_default_holo_light"
+        android:text="SignIn"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:text="SignIn" />
+        android:layout_marginTop="76dp"
+        android:background="@drawable/customtheme_edit_text_holo_light"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="username/email"
+        android:text="rhlnair@gmail.com"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_editText"
+        android:layout_below="@+id/username_editText"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/customtheme_edit_text_holo_light"
+        android:ems="10"
+        android:gravity="center"
+        android:text="test123"
+        android:hint="password"
+        
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

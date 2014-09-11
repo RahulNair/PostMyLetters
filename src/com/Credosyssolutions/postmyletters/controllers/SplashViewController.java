@@ -47,7 +47,7 @@ public class SplashViewController extends Activity {
 		final float[] roundedCorners = new float[] { 2, 2, 2, 2, 2, 2, 2, 2 };
 		ShapeDrawable	pgDrawable = new ShapeDrawable(new RoundRectShape(roundedCorners, null,null));
 
-		pgDrawable.getPaint().setColor(Color.rgb(145	,59	,144));
+		pgDrawable.getPaint().setColor(Color.rgb(145,59	,144));
 		ClipDrawable progress = new ClipDrawable(pgDrawable, Gravity.LEFT, ClipDrawable.HORIZONTAL);
 		splashProgressBar.setProgressDrawable(progress);   
 		splashProgressBar.setBackgroundDrawable(getResources().getDrawable(android.R.drawable.progress_horizontal));

@@ -1,9 +1,10 @@
-<!--   Copyright (C) CredosysSolutions - All Rights Reserved
+<!--
+   Copyright (C) CredosysSolutions - All Rights Reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  * Proprietary and confidential
  * Written by Rahul Nair <rhlnair@gmail.com>, September 2014.
- */-->
-
+ */
+-->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -15,103 +16,78 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.Credosyssolutions.postmyletters.controllers.SignupViewController" >
 
-    <TextView
-        android:id="@+id/username_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="59dp"
-        android:text="UserName"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/password_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/email_textview"
-        android:layout_below="@+id/email_textview"
-        android:layout_marginTop="40dp"
-        
-        android:text="Password"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/email_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/username_textView"
-        android:layout_below="@+id/username_textView"
-        android:layout_marginTop="40dp"
-        android:text="email"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/confirmPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/password_textview"
-        android:layout_alignRight="@+id/username_textView"
-        android:layout_below="@+id/password_textview"
-        android:layout_marginTop="40dp"
-        android:text="Confirm Password"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <EditText
-        android:id="@+id/email_editText2"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/email_textview"
-        android:layout_alignBottom="@+id/email_textview"
-        android:layout_alignRight="@+id/username_editText1"
-        android:ems="10"
-         android:lines="1"
-        android:maxLines="1"
-        android:singleLine="true"  />
-
-    <EditText
-        android:id="@+id/password_editText1"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/password_textview"
-        android:layout_alignBottom="@+id/password_textview"
-        android:layout_alignRight="@+id/email_editText2"
-        android:ems="10"
-        android:inputType="textPassword" />
-
-    <EditText
-        android:id="@+id/confrim_password_zeditText1"
-        android:layout_width="190dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/password_editText1"
-        android:layout_alignTop="@+id/confirmPassword"
-        android:ems="10"
-        android:inputType="textPassword" />
-
     <Button
         android:id="@+id/signup_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/confirmpassword_signup_editText1"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/email_signup_editText"
         android:layout_marginBottom="52dp"
+        android:textColor="@color/white"
+        android:background="@drawable/customtheme_btn_default_holo_light"
         android:text="Sign Up" />
 
     <EditText
-        android:id="@+id/username_editText1"
-        android:layout_width="190dp"
+        android:id="@+id/username_signup_editText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/username_textView"
-        android:layout_alignBottom="@+id/username_textView"
-        android:layout_alignParentRight="true"
-        
-        
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
         android:ems="10"
-        android:lines="1"
-        android:maxLines="1"
-        android:singleLine="true" >
+                android:background="@drawable/customtheme_edit_text_holo_light"
+        android:hint="username"
+        android:text="rhlnairtest"
+        
+        android:gravity="center"
+        android:inputType="textPersonName" >
 
         <requestFocus />
     </EditText>
+
+    <EditText
+        android:id="@+id/email_signup_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_signup_editText"
+        android:layout_below="@+id/username_signup_editText"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+                android:background="@drawable/customtheme_edit_text_holo_light"
+        android:hint="email"
+        android:gravity="center"
+        android:text="rhlnair@gmail.com"
+        
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/confirmpassword_signup_editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_signup_editText"
+        android:layout_alignLeft="@+id/password_signup_editText"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+                android:background="@drawable/customtheme_edit_text_holo_light"
+        android:hint="confrim password"
+        android:gravity="center"
+        android:text="test123"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password_signup_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_signup_editText"
+        android:layout_below="@+id/email_signup_editText"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+                android:background="@drawable/customtheme_edit_text_holo_light"
+        android:hint="password"
+        android:gravity="center"
+        android:text="test123"
+        
+        android:inputType="textPassword" />
 
 </RelativeLayout>
